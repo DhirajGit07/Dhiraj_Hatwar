@@ -1,0 +1,55 @@
+.contact-container h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.contact-container {
+  margin: 4rem 0;
+  position: relative;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.contactHead{
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  color: #fefefe;
+
+  &:hover{
+    color: #a993fe;
+  }
+
+}
+.contact-content {
+  display: flex;
+  gap: 3rem;
+  margin-left: 225px;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column-reverse;
+  }
+  .contact-container h5 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+}
+.contact-link {
+  color: #0073b1; /* LinkedIn color as an example */
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}

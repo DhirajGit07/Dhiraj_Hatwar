@@ -1,0 +1,130 @@
+.projects-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;  
+    overflow: hidden;
+    width: 100%; 
+    margin: 0 16px; 
+    justify-content: center;
+}
+
+.ProjectsHead {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #fefefe;
+    margin-bottom: 30px;
+}
+
+.ProjectsHead:hover {
+    color: #a993fe;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 16px;  /* Use margin for spacing */
+    transition: transform 0.2s; 
+}
+
+.project-card:hover {
+    transform: translateY(-5px); 
+}
+
+.project-image {
+    width: 100%;
+    height: auto; 
+    max-height: 150px; 
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 16px;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    margin: 8px 0;
+}
+
+.project-button {
+    display: inline-block;
+    background: #007bff;
+    color: white; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.project-button:hover {
+    background: #0056b3;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+button:disabled {
+    background-color: transparent;
+    cursor: not-allowed;
+}
+
+.arrow-button {
+    font-size: 1.5rem; 
+    padding: 10px;
+    background: transparent;
+    border: none; 
+    cursor: pointer;
+    color: #007bff; 
+    transition: color 0.3s; 
+}
+
+.arrow-button:hover {
+    color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%; /* 1 card per row */
+        margin: 8px 0; /* Vertical margin for spacing */
+    }
+
+    .project-image {
+        max-height: 120px; 
+    }
+}
+
+@media (min-width: 769px) {
+    .project-card {
+        width: calc(33.333% - 32px); /* 3 cards per row minus margin */
+    }
+
+    .project-image {
+        max-height: 150px; 
+    }
+}

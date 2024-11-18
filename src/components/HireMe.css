@@ -1,0 +1,162 @@
+/* General container styling */
+.main-container{
+  background-color: #160f52;
+}
+.hire-me-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.intro-section,
+.skills-section,
+.experience-section,
+.resume-section,
+.contact-section,
+.certificates-container {
+  margin-bottom: 2rem;
+}
+
+.hire-me-container h1,
+.hire-me-container h2 {
+  color: #000000;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-badge {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.back-btn2 {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+.resume-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.view-resume-btn,
+.download-resume {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-resume-btn {
+  background-color: #007BFF;
+  color: white;
+}
+
+.view-resume-btn:hover {
+  background-color: #0056b3;
+}
+
+.download-resume {
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+}
+
+.download-resume:hover {
+  background-color: #218838;
+}
+
+
+
+/* Certificates section styling */
+.certificates-container {
+  text-align: center;
+ 
+}
+.certificates-container h2{
+  justify-content: left;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.certificates-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certificate-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 250px;
+  text-align: left;
+}
+
+.certificate-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.certificate-card h3 {
+  margin: 10px 0 5px;
+}
+
+.certificate-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .hire-me-container {
+    padding: 1rem;
+  }
+
+  .certificates-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resume-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .view-resume-btn,
+  .download-resume {
+    width: 100%;
+  }
+
+  .skills-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .certificate-card {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .skills-list {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .skill-badge {
+    margin-bottom: 0.3rem;
+    font-size: 0.8rem;
+  }
+}

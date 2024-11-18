@@ -1,0 +1,292 @@
+/* 
+.nav-wrapper {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(50px);
+}
+
+.nav-content {
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0 auto;
+    height: 70px;
+}
+
+.logo {
+    width: 12rem;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 1.5rem;
+}
+
+.menu-item {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+}
+
+.menu-item::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease; 
+}
+
+.menu-item:hover::after {
+    width: 100%;
+}
+
+.contact-btn {
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    padding: 0.6rem 2rem;
+    border: none;
+    outline: 1.5px solid transparent;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    color: #a993fe;
+    background: #000;
+    outline: 1.5px solid #a993fe;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    
+}
+
+@media (max-width: 769px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #342864;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .logo {
+        width: 10rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 1325px) {
+    .nav-wrapper {
+        padding: 0 2rem;
+    }
+
+} */
+
+
+
+
+/* Navbar Wrapper */
+.nav-wrapper {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(50px);
+}
+
+/* Navbar Content */
+.nav-content {
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0 auto;
+    height: 70px;
+}
+
+/* Logo */
+.logo {
+    width: 12rem;
+    height: auto;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+/* Individual Navigation Link Items */
+.nav-links li {
+    margin: 0 1.5rem;
+}
+
+.menu-item {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Smooth Underline Effect */
+.menu-item::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease;
+}
+
+/* Extend the underline on hover */
+.menu-item:hover::after {
+    width: 100%;
+}
+
+/* Contact Button */
+.contact-btn {
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    padding: 0.6rem 2rem;
+    border: none;
+    outline: 1.5px solid transparent;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    color: #a993fe;
+    background: #000;
+    outline: 1.5px solid #a993fe;
+}
+
+/* Mobile Menu Button (Menu Toggle) */
+.menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Styling for Medium Screens */
+@media (max-width: 1024px) {
+    .nav-content {
+        padding: 0 1.5rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    /* Adjust spacing for medium screens */
+    .nav-links li {
+        margin: 0 1rem;
+    }
+    
+    .contact-btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .logo {
+        width: 10rem;
+    }
+}
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 769px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #342864;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+
+/* Additional Responsive Adjustments */
+@media (max-width: 425px) {
+    .logo {
+        width: 8rem;
+    }
+  
+}
+
+@media (max-width: 1325px) {
+    .nav-wrapper {
+        padding: 0 2rem;
+    }
+}
